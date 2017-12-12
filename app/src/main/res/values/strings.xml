@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Quiz App</string>
-    <string name="header">Let\'s see how much You know about Real Madrid</string>
+    <string name="header">Let\'s see how much you know about Real Madrid</string>
     <string name="logo"></string>
-    <string name="start_button">click to start</string>
+    <string name="start_button">start quiz</string>
+    <string name="question1">Question 1:</string>
+    <string name="question_1_text">In what year were Real Madrid formed? </string>
+    <string name="question_1_answer_1">1905</string>
+    <string name="question_1_answer_2">1902</string>
+    <string name="question_1_answer_3">1910</string>
+    <string name="question_1_back_button">back</string>
+    <string name="question_1_next_button">next</string>
 </resources>
