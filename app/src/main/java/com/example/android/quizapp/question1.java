@@ -25,7 +25,7 @@ public class question1 extends AppCompatActivity {
     }
 
     public void onClickBack(View view) {
-        Intent Intent = new Intent(this, question1.class);
+        Intent Intent = new Intent(this, MainActivity.class);
         startActivity(Intent);
     }
 
