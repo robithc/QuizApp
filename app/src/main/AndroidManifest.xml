@@ -24,12 +24,17 @@
             android:parentActivityName=".question2" >
         </activity>
         <activity android:name=".question3"
-            android:parentActivityName=".question2" >
+            android:parentActivityName=".question3" >
         </activity>
         <activity android:name=".question4"
-            android:parentActivityName=".question2" >
+            android:parentActivityName=".question4" >
         </activity>
-
+        <activity android:name=".question5"
+            android:parentActivityName=".question5" >
+        </activity>
+        <activity android:name=".question6"
+            android:parentActivityName=".question6" >
+        </activity>
 
 
     </application>

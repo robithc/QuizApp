@@ -3,11 +3,55 @@
     <string name="header">Let\'s see how much you know about Real Madrid</string>
     <string name="logo"></string>
     <string name="start_button">start quiz</string>
-    <string name="question1">Question 1:</string>
+    <string name="question1">Question 1</string>
     <string name="question_1_text">In what year were Real Madrid formed? </string>
     <string name="question_1_answer_1">1905</string>
     <string name="question_1_answer_2">1902</string>
     <string name="question_1_answer_3">1910</string>
     <string name="question_1_back_button">back</string>
     <string name="question_1_next_button">next</string>
+
+    <string name="question2">Question 2</string>
+    <string name="question_2_text">Who was the club president with the \'galactico\' dream? </string>
+    <string name="question_2_answer_1">Lorenzo Sanz</string>
+    <string name="question_2_answer_2">Florentino Perez</string>
+    <string name="question_2_answer_3">Fernando Martin Álvarez</string>
+    <string name="question_2_back_button">back</string>
+    <string name="question_2_next_button">next</string>
+
+    <string name="question3">Question 3</string>
+    <string name="question_3_text">Who was the first \'galactico\' signing? </string>
+    <string name="question_3_answer_1">Zinedine Zidane</string>
+    <string name="question_3_answer_2">David Beckham</string>
+    <string name="question_3_answer_3">Luis Figo</string>
+    <string name="question_3_back_button">back</string>
+    <string name="question_3_next_button">next</string>
+
+
+    <string name="question4">Question 4</string>
+    <string name="question_4_text">How mamy did Cristiano Ronaldo cost when he signed from Manchester United?</string>
+    <string name="question_4_answer_1">£90million</string>
+    <string name="question_4_answer_2">£80million</string>
+    <string name="question_4_answer_3">£85million</string>
+    <string name="question_4_back_button">back</string>
+    <string name="question_4_next_button">next</string>
+
+    <string name="question5">Question 5</string>
+    <string name="question_5_text">Which team did Real Madrid beat to land \'La Decima\'?</string>
+    <string name="question_5_answer_1">Milan</string>
+    <string name="question_5_answer_2">Arsenal</string>
+    <string name="question_5_answer_3">Athletico Madrid</string>
+    <string name="question_5_back_button">back</string>
+    <string name="question_5_next_button">next</string>
+
+    <string name="question6">Question 6</string>
+    <string name="question_6_text">How many Liga titles did David Beckham win in his time in Real Madrid?</string>
+    <string name="question_6_answer_1">one</string>
+    <string name="question_6_answer_2">two</string>
+    <string name="question_6_answer_3">three</string>
+    <string name="question_6_back_button">back</string>
+    <string name="question_6_next_button">next</string>
+
+
+
 </resources>
