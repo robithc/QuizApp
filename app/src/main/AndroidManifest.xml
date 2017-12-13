@@ -16,8 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".question1"
-            android:parentActivityName=".question1" >
+        <activity android:name=".Question1">
         </activity>
 
         <activity android:name=".question2"
@@ -34,6 +33,9 @@
         </activity>
         <activity android:name=".question6"
             android:parentActivityName=".question6" >
+        </activity>
+        <activity android:name=".test"
+            android:parentActivityName=".test" >
         </activity>
 
 

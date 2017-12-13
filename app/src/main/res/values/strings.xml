@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quiz App</string>
+    <string name="app_name">Real Madrid Quiz</string>
     <string name="header">Let\'s see how much you know about Real Madrid</string>
     <string name="logo"></string>
     <string name="start_button">start quiz</string>
@@ -18,6 +18,7 @@
     <string name="question_2_answer_3">Fernando Martin Álvarez</string>
     <string name="question_2_back_button">back</string>
     <string name="question_2_next_button">next</string>
+    <string name="question_2_hint">enter full name here</string>
 
     <string name="question3">Question 3</string>
     <string name="question_3_text">Who was the first \'galactico\' signing? </string>
@@ -50,7 +51,7 @@
     <string name="question_6_answer_2">two</string>
     <string name="question_6_answer_3">three</string>
     <string name="question_6_back_button">back</string>
-    <string name="question_6_next_button">next</string>
+    <string name="question_6_submit_button">submit answers</string>
 
 
 

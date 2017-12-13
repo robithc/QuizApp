@@ -8,21 +8,21 @@
 
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="@string/question1"
+        android:text="@string/question3"
         tools:fontFamily="sans-serif-condensed" />
 
     <TextView
-        android:id="@+id/question_1"
+        android:id="@+id/question_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="@string/question_1_text"
+        android:text="@string/question_3_text"
         tools:fontFamily="sans-serif-condensed" />
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,25 +32,27 @@
         android:orientation="vertical">
 
         <RadioButton
-            android:id="@+id/question_1_answer_1"
+            android:id="@+id/question_3_answer_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/question_1_answer_1" />
+            android:text="@string/question_3_answer_1" />
 
         <RadioButton
-            android:id="@+id/question_1_answer_2"
+
+            android:id="@+id/question_3_answer_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/question_1_answer_2" />
+            android:text="@string/question_3_answer_2" />
 
         <RadioButton
-            android:id="@+id/question_1_answer_3"
+
+            android:id="@+id/question_3_answer_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/question_1_answer_3" />
+            android:text="@string/question_3_answer_3" />
     </RadioGroup>
 
     <LinearLayout

@@ -19,7 +19,7 @@ public class question6 extends AppCompatActivity {
     }
 
     public void onClickNext(View view) {
-        Intent Intent = new Intent(this, question2.class);
+        Intent Intent = new Intent(this, test.class);
         startActivity(Intent);
     }
 

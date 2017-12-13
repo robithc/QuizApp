@@ -3,26 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:alpha=".75"
     android:orientation="vertical"
-    tools:context="com.example.android.quizapp.Question1">
+
+    android:scaleType="centerInside"
+    tools:context="com.example.android.quizapp.question6"
+    tools:scaleType="matrix">
 
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="@string/question1"
+        android:text="@string/question6"
+        android:textColor="@color/colorPrimaryDark"
         tools:fontFamily="sans-serif-condensed" />
 
     <TextView
-        android:id="@+id/question_1"
+        android:id="@+id/question_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="@string/question_1_text"
+        android:text="@string/question_6_text"
         tools:fontFamily="sans-serif-condensed" />
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -32,25 +38,25 @@
         android:orientation="vertical">
 
         <RadioButton
-            android:id="@+id/question_1_answer_1"
+            android:id="@+id/question_6_answer_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/question_1_answer_1" />
+            android:text="@string/question_6_answer_1" />
 
         <RadioButton
-            android:id="@+id/question_1_answer_2"
+            android:id="@+id/question_6_answer_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/question_1_answer_2" />
+            android:text="@string/question_6_answer_2" />
 
         <RadioButton
-            android:id="@+id/question_1_answer_3"
+            android:id="@+id/question_6_answer_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/question_1_answer_3" />
+            android:text="@string/question_6_answer_3" />
     </RadioGroup>
 
     <LinearLayout
@@ -59,7 +65,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="16dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/question_1_back"
@@ -70,22 +76,14 @@
             android:text="@string/question_1_back_button" />
 
         <Button
-            android:id="@+id/question_1_next"
+            android:id="@+id/question_6_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:onClick="onClickNext"
-            android:text="@string/question_1_next_button" />
+            android:text="@string/question_6_submit_button" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom"
-        android:contentDescription="@string/logo"
-        android:src="@drawable/logo" />
 
 
 </LinearLayout>

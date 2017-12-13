@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 
-public class question2 extends AppCompatActivity {
+public class Question1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.question2);
+        setContentView(R.layout.question1);
     }
 
     public void onRadioButtonClicked(View view) {
@@ -19,12 +20,12 @@ public class question2 extends AppCompatActivity {
     }
 
     public void onClickNext(View view) {
-        Intent Intent = new Intent(this, question3.class);
+        Intent Intent = new Intent(this, question2.class);
         startActivity(Intent);
     }
 
     public void onClickBack(View view) {
-        Intent Intent = new Intent(this, Question1.class);
+        Intent Intent = new Intent(this, MainActivity.class);
         startActivity(Intent);
     }
 
