@@ -9,12 +9,13 @@ import android.widget.Button;
 import android.widget.RadioButton;
 
 public class Question1 extends AppCompatActivity {
-    int score = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question1);
+
     }
 
 
@@ -22,7 +23,7 @@ public class Question1 extends AppCompatActivity {
 
 
 
-
+int score = 0;
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
@@ -51,9 +52,10 @@ public class Question1 extends AppCompatActivity {
         Log.d("SCORE", "value: " + score);
     }
     public void onClickNext(View view) {
-        Intent Intent = new Intent(this, question2.class);
-        Intent.putExtra("score",score);
-        startActivity(Intent);
+        Intent myIntent = new Intent(Question1.this, question2.class);
+        myIntent.putExtra("intVariableName", score);
+        startActivity(myIntent);
+        Log.d("SCORE", "value: " + score);
     }
 
     public void onClickBack(View view) {
