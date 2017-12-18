@@ -36,21 +36,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/question_1_answer_1" />
+            android:text="@string/question_1_answer_1"
+            android:onClick="onRadioButtonClicked"/>
 
         <RadioButton
             android:id="@+id/question_1_answer_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/question_1_answer_2" />
+            android:text="@string/question_1_answer_2"
+            android:onClick="onRadioButtonClicked"/>
 
         <RadioButton
             android:id="@+id/question_1_answer_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/question_1_answer_3" />
+            android:text="@string/question_1_answer_3"
+            android:onClick="onRadioButtonClicked"/>
     </RadioGroup>
 
     <LinearLayout

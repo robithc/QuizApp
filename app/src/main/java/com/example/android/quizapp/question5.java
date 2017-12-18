@@ -12,6 +12,8 @@ public class question5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question5);
     }
+    Bundle bundle = this.getIntent().getExtras();
+    String score = bundle.getString("score");
 
     public void onRadioButtonClicked(View view) {
 
@@ -20,6 +22,7 @@ public class question5 extends AppCompatActivity {
 
     public void onClickNext(View view) {
         Intent Intent = new Intent(this, question6.class);
+        Intent.putExtra("score",score);
         startActivity(Intent);
     }
 

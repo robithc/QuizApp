@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:onClick="onClickNext"
+            android:onClick="onClickSubmitAnswer"
             android:text="@string/question_6_submit_button" />
 
     </LinearLayout>
