@@ -16,14 +16,10 @@ public class Question1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question1);
 
+
     }
 
-
-
-
-
-
-int score = 0;
+        int score ;
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
@@ -38,7 +34,7 @@ int score = 0;
                     break;
             case R.id.question_1_answer_2:
                 if (checked)
-                    score = score +1;
+                    score = 1;
 
 
                 // Ninjas rule
@@ -52,9 +48,15 @@ int score = 0;
         Log.d("SCORE", "value: " + score);
     }
     public void onClickNext(View view) {
-        Intent myIntent = new Intent(Question1.this, question2.class);
-        myIntent.putExtra("intVariableName", score);
+        Intent myIntent = new Intent(this, question2.class);
+        Bundle bundle = new Bundle();
+        bundle.putInt("score",score);
+
+        myIntent.putExtras(bundle);
+
         startActivity(myIntent);
+
+
         Log.d("SCORE", "value: " + score);
     }
 

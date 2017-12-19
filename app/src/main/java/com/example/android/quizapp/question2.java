@@ -10,15 +10,17 @@ import android.widget.Toast;
 
 
 public class question2 extends AppCompatActivity {
+    Bundle bundle = this.getIntent().getExtras();
+    int score = bundle.getInt("score");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question2);
 
-        Intent mIntent = getIntent();
-        int intValue = mIntent.getIntExtra("intVariableName", 0);
-        Log.d("SCORE2", "value: " + mIntent);
+
+
+        Log.d("SCORE2", "value: " + score);
     }
 
     public void onRadioButtonClicked(View view) {
@@ -32,8 +34,7 @@ public class question2 extends AppCompatActivity {
     String name = answerEditText.getText().toString();
 
     public void getCorrectAnswer() {
-        Bundle bundle = this.getIntent().getExtras();
-        String score = bundle.getString("score");
+
         String correctAnswer= "Florentino Perez";
         if (name.equals(correctAnswer))
             score = score +1 ;
@@ -41,8 +42,7 @@ public class question2 extends AppCompatActivity {
 
     }
     public void onClickNext(View view) {
-        Bundle bundle = this.getIntent().getExtras();
-        String score = bundle.getString("score");
+
         Intent Intent = new Intent(this, question3.class);
         Intent.putExtra("score",score);
         startActivity(Intent);
