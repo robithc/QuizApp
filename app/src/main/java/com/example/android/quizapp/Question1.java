@@ -1,5 +1,6 @@
 package com.example.android.quizapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,9 @@ import android.widget.Button;
 import android.widget.RadioButton;
 
 public class Question1 extends AppCompatActivity {
+    int score ;
+
+
 
 
     @Override
@@ -17,9 +21,12 @@ public class Question1 extends AppCompatActivity {
         setContentView(R.layout.question1);
 
 
+
+
+
     }
 
-        int score ;
+
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
@@ -27,40 +34,44 @@ public class Question1 extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
+
             case R.id.question_1_answer_1:
                 if (checked)
-                    // Pirates are the best
+
 
                     break;
+                //correct answer
             case R.id.question_1_answer_2:
                 if (checked)
                     score = 1;
 
 
-                // Ninjas rule
+
                 break;
             case R.id.question_1_answer_3:
                 if (checked)
 
-                    // Ninjas rule
+
                     break;
         }
         Log.d("SCORE", "value: " + score);
     }
+
+
     public void onClickNext(View view) {
-        Intent myIntent = new Intent(this, question2.class);
+
+
+        Intent intentBundle = new Intent(this, question2.class);
         Bundle bundle = new Bundle();
-        bundle.putInt("score",score);
-
-        myIntent.putExtras(bundle);
-
-        startActivity(myIntent);
+        bundle.putInt("scoreValue",score);
+        intentBundle.putExtras(bundle);
+        startActivity(intentBundle);
 
 
         Log.d("SCORE", "value: " + score);
     }
 
-    public void onClickBack(View view) {
+    public void onClickBack(View v) {
         Intent Intent = new Intent(this, MainActivity.class);
         startActivity(Intent);
     }

@@ -16,26 +16,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
+
+
+
         <activity android:name=".Question1">
+
         </activity>
 
         <activity android:name=".question2"
-            android:parentActivityName=".question2" >
+             >
         </activity>
         <activity android:name=".question3"
-            android:parentActivityName=".question3" >
+             >
         </activity>
         <activity android:name=".question4"
-            android:parentActivityName=".question4" >
+             >
         </activity>
         <activity android:name=".question5"
-            android:parentActivityName=".question5" >
+             >
         </activity>
-        <activity android:name=".question6"
-            android:parentActivityName=".question6" >
+        <activity android:name=".question6">
+
         </activity>
-        <activity android:name=".test"
-            android:parentActivityName=".test" >
+        <activity android:name=".test">
+
         </activity>
 
 
