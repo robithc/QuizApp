@@ -26,6 +26,7 @@
         tools:fontFamily="sans-serif-condensed" />
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/question_3_answer"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -63,20 +64,13 @@
         android:layout_marginTop="16dp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/question_1_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="16dp"
-            android:onClick="onClickBack"
-            android:text="@string/question_1_back_button" />
 
         <Button
             android:id="@+id/question_1_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:onClick="onClickNext"
+            android:onClick="goToQuestion4"
             android:text="@string/question_1_next_button" />
 
     </LinearLayout>

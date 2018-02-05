@@ -38,12 +38,9 @@
         <activity android:name=".question5"
              >
         </activity>
-        <activity android:name=".question6">
+        <activity android:name=".results"/>
 
-        </activity>
-        <activity android:name=".test">
 
-        </activity>
 
 
     </application>

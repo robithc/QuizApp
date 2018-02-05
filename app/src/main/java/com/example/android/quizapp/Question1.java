@@ -1,81 +1,30 @@
 package com.example.android.quizapp;
 
-import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.RadioButton;
+import android.widget.EditText;
+
 
 public class Question1 extends AppCompatActivity {
-    int score ;
 
-
-
+    public static final String question1Answer = "com.example.android.quizapp.Answer1";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question1);
-
-
-
-
-
     }
 
 
+    public void goToQuestion2(View view) {
 
-    public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch(view.getId()) {
-
-            case R.id.question_1_answer_1:
-                if (checked)
+        String answer = ((EditText) findViewById(R.id.question_1_edit_text)).getText().toString();
 
 
-                    break;
-                //correct answer
-            case R.id.question_1_answer_2:
-                if (checked)
-                    score = 1;
-
-
-
-                break;
-            case R.id.question_1_answer_3:
-                if (checked)
-
-
-                    break;
-        }
-        Log.d("SCORE", "value: " + score);
+        Intent intent = new Intent(this, question2.class);
+        intent.putExtra(question1Answer, answer);
+        startActivity(intent);
     }
-
-
-    public void onClickNext(View view) {
-
-
-        Intent intentBundle = new Intent(this, question2.class);
-        Bundle bundle = new Bundle();
-        bundle.putInt("scoreValue",score);
-        intentBundle.putExtras(bundle);
-        startActivity(intentBundle);
-
-
-        Log.d("SCORE", "value: " + score);
-    }
-
-    public void onClickBack(View v) {
-        Intent Intent = new Intent(this, MainActivity.class);
-        startActivity(Intent);
-    }
-
-
 }
-

@@ -1,27 +1,20 @@
 package com.example.android.quizapp;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
+import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
+
+import android.widget.RadioGroup;
 
 
 public class question2 extends AppCompatActivity {
 
 
-
-   Intent intentExtras = getIntent();
-   Bundle extrasBundle = intentExtras.getExtras();
+    public static final String question2Answer = "com.example.android.quizapp.Answer2";
 
 
-    int score = extrasBundle.getInt("scoreValue");
-
-
-
+    private String question1Ans = "";
 
 
     @Override
@@ -31,50 +24,44 @@ public class question2 extends AppCompatActivity {
         setContentView(R.layout.question2);
 
 
+        Intent intent = getIntent();
+        question1Ans = intent.getStringExtra(Question1.question1Answer);
+
+
+    }
+
+
+    public void goToQuestion3(View view) {
+
+        int answer = ((RadioGroup) findViewById(R.id.question_2_answer)).getCheckedRadioButtonId();
+
+
+        switch (answer) {
+            case R.id.question_2_answer_1:
+                answer = 0;
+                break;
+            case R.id.question_2_answer_2:
+                answer = 1;
+                break;
+            case R.id.question_2_answer_3:
+                answer = 2;
+                break;
         }
 
 
-
-
-
-
-
-
-
-
-
-
-    public void onRadioButtonClicked(View view) {
-
-
-    }
-
-
-
-    EditText answerEditText = (EditText) findViewById(R.id.question_2_edit_text);
-    String name = answerEditText.getText().toString();
-
-    public void getCorrectAnswer() {
-
-
-        String correctAnswer= "Florentino Perez";
-        if (name.equals(correctAnswer))
-            score = score +1 ;
-
-
-    }
-    public void onClickNext(View view) {
-
-
-        Intent Intent = new Intent(this, question3.class);
-        Intent.putExtra("score",score);
-        startActivity(Intent);
-        getCorrectAnswer();
-    }
-
-    public void onClickBack(View view) {
-        Intent Intent = new Intent(this, Question1.class);
-        startActivity(Intent);
+        Intent intent = new Intent(this, question3.class);
+        intent.putExtra(Question1.question1Answer, question1Ans);
+        intent.putExtra(question2.question2Answer, answer);
+        startActivity(intent);
     }
 }
+
+
+
+
+
+
+
+
+
 
